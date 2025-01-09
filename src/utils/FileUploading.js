@@ -2,18 +2,13 @@ import { v2 as cloudinary } from "cloudinary";
 import fs from "fs";
 
 // Configuration
-// cloudinary.config({
-//     cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
-//     api_key: process.env.CLOUDINARY_API_KEY,
-//     api_secret: process.env.CLOUDINARY_API_SECRET
-// });
-
 cloudinary.config({
-      cloud_name: 'ytubeclone' ,
-      api_key: '738793688189774',
-      api_secret: 'BnqVrvMG3eh_i65mLQgHuuAMm4A'
-  });
-  
+    cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+    api_key: process.env.CLOUDINARY_API_KEY,
+    api_secret: process.env.CLOUDINARY_API_SECRET
+});
+
+
 
 const uploadOnCloudinary = async (localFilePath)=>{
     try{
